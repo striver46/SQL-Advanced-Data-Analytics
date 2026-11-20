@@ -49,9 +49,8 @@ This project explores a bike-and-accessories sales data warehouse (gold layer) u
 
 ## 📈 Change Over Time & Cumulative Analysis
 
-<p align="center">
-  <img src="assets/yearly_revenue.png" alt="Yearly revenue" width="80%">
-</p>
+<img width="1800" height="750" alt="sql_proj_monthly_cumulative" src="https://github.com/user-attachments/assets/45e756d5-bb73-4d37-88f5-4441c15f55f7" />
+
 
 | Year | Revenue | Change vs previous year |
 |:--|--:|--:|
@@ -61,7 +60,6 @@ This project explores a bike-and-accessories sales data warehouse (gold layer) u
 
 > ⚠️ 2010 (December only) and 2014 (January only) are partial years, so 2013 vs 2012 is the only fair year-over-year comparison.
 
-<img width="1650" height="750" alt="sql_proj_yearly_revenue" src="https://github.com/user-attachments/assets/912219ee-e765-4a73-a7bc-5980b1ca9d73" />
 
 **SQL techniques:** `SUM() OVER (ORDER BY ...)` for running totals, `PARTITION BY year` for year-to-date sales, `AVG() OVER` for the moving average price, `LAG()` for YoY growth.
 
